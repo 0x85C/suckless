@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# UPDATE PATH HERE
+dmenu_dir="$HOME/suckless/dmenu/"
+stest_bin="$dmenu_dir/stest"
+
+cachedir="${XDG_CACHE_HOME:-"$HOME/.cache"}"
+cache="$cachedir/dmenu_run"
+
+[ ! -e "$cachedir" ] && mkdir -p "$cachedir"
+
+IFS=:
+if $stest_bin -dqr -n "$cache" $PATH; then
+	$stest_bin -flx $PATH | sort -u | tee "$cache"
+else
+	cat "$cache"
+fi

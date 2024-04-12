@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# UPDATE PATH HERE
+dmenu_dir="$HOME/suckless/dmenu/"
+dmenu_bin="$dmenu_dir/dmenu"
+dmenu_path_bin="$dmenu_dir/dmenu_path"
+
+$dmenu_path_bin | $dmenu_bin "$@" | ${SHELL:-"/bin/sh"} &
