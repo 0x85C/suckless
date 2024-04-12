@@ -1,4 +1,5 @@
-# Suckless programs and customizations
+# Suckless programs
+## With patches and 0x85c's customizations
 
 These are [suckless](https://suckless.org/) programs with my selection of patches applied, as patches sometimes don't work with newer versions, or when multiple patches are applied, I have done the work to make these patches work with the latest vesion (at the time of writing) and resolve conflicts between patches. Either make clean all the programs, or directly apply the patches yourself from the upstream suckless repo, using the same version.
 
@@ -14,14 +15,13 @@ These are [suckless](https://suckless.org/) programs with my selection of patche
 #### Building this project:
 
 ```
-git clone ... && cd ./dmenu
+git clone git@github.com:0x85C/suckless.git && cd ./dmenu
 make clean all
 ```
 
 #### Building project from upstream without this repo (not necessary):
 
 ```
-rm -rf ./dmenu
 git clone https://git.suckless.org/dmenu && cd ./dmenu
 git checkout 5.3
 mkdir ./patches # <-- copy .diff files here from ./patches directory
@@ -39,5 +39,4 @@ bindsym $mod+d exec --no-startup-id ~/suckless/dmenu/dmenu_run -i -c -l 10 -nb '
 
 #### Screenshot
 
-![dmenu screenshot](./screenshots/dmenu_screenhot.png)
-
+![dmenu screenshot](./dmenu/screenshots/dmenu_screenhot.png)
