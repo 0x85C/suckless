@@ -39,4 +39,4 @@ bindsym $mod+d exec --no-startup-id ~/suckless/dmenu/dmenu_run -i -c -l 10 -nb '
 
 #### Screenshot
 
-![dmenu screenshot](./dmenu/screenshots/dmenu_screenhot.png)
+![dmenu screenshot](./dmenu/screenshots/dmenu_screenshot.png)
