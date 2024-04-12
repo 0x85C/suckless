@@ -40,3 +40,36 @@ bindsym $mod+d exec --no-startup-id ~/suckless/dmenu/dmenu_run -i -c -l 10 -nb '
 #### Screenshot
 
 ![dmenu screenshot](./dmenu/screenshots/dmenu_screenshot.png)
+
+### [slock](https://tools.suckless.org/slock/)
+
+  - tag: 1.5 (commit: 4f045545a25cc02c64bfc08d27ed2ccecb962292) *- latest as of 2024-04-13*
+  - patches
+    - all-black (my own patch)
+      - patches/slock-all-black-1.5-0x85c.diff
+  
+#### Building this project:
+
+```
+git clone git@github.com:0x85C/suckless.git && cd ./slock
+make clean all
+```
+
+#### Building project from upstream without this repo (not necessary):
+
+```
+git clone https://git.suckless.org/slock && cd ./slock
+git checkout 1.5
+mkdir ./patches # <-- copy .diff files here from ./patches directory
+git apply patches/slock-all-black-1.5-0x85c.diff
+make clean all
+```
+
+#### i3 config
+
+```
+exec --no-startup-id sudo xss-lock --transfer-sleep-lock -- ~/suckless/slock/slock
+bindsym $mod+x exec sudo ~/suckless/slock/slock
+```
+
+*Note: update sudoers to allow slock to run as root (so slock can disable OOM killer)*

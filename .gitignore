@@ -2,3 +2,5 @@
 dmenu/config.h
 dmenu/dmenu
 dmenu/stest
+slock/config.h
+slock/slock
