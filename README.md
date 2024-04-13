@@ -66,11 +66,11 @@ bindsym $mod+d exec --no-startup-id ~/suckless/dmenu/dmenu_run -i -c -l 10 -nb '
     - [dracula](https://st.suckless.org/patches/scrollback/)
       - patches/st-dracula-0.9.2-0x85c.diff
     - [scrollback](https://st.suckless.org/patches/scrollback/)
-      - st-scrollback-0.9.2-0x85c.diff
+      - patches/st-scrollback-0.9.2-0x85c.diff
     - [scrollback-reflow](https://st.suckless.org/patches/scrollback/)
-      - st-scrollback-reflow-0.9.2-0x85c.diff
+      - patches/st-scrollback-reflow-0.9.2-0x85c.diff
     - [scrollback-mouse-altscreen](https://st.suckless.org/patches/scrollback/)
-      - st-scrollback-mouse-altscreen-0.9.2-0x85c.diff
+      - patches/st-scrollback-mouse-altscreen-0.9.2-0x85c.diff
   
 #### Building this project:
 
@@ -86,6 +86,9 @@ git clone https://git.suckless.org/st && cd ./st
 git checkout 0.9.2
 mkdir ./patches # <-- copy .diff files here from ./patches directory
 git apply patches/st-dracula-0.9.2-0x85c.diff
+git apply patches/st-scrollback-0.9.2-0x85c.diff
+git apply patches/st-scrollback-reflow-0.9.2-0x85c.diff
+git apply patches/st-scrollback-mouse-altscreen-0.9.2-0x85c.diff
 make clean all
 ```
 
