@@ -7,16 +7,16 @@ These are [suckless](https://suckless.org/) programs with my selection of patche
   - st
   - slock
 
-### Quickstart
+## Quickstart
 
-#### Recommended: Build all
+### Recommended: Build all
 
 ```
 git clone git@github.com:0x85C/suckless.git
 ./build-all.sh
 ```
 
-#### Alternative: Build all from upstream
+### Alternative: Build all from upstream
 
 ```
 git clone git@github.com:0x85C/suckless.git
@@ -35,25 +35,6 @@ git clone git@github.com:0x85C/suckless.git
       - patches/dmenu-center-5.3-0x85c.diff
     - [border](https://tools.suckless.org/dmenu/patches/border/)
       - patches/dmenu-border-5.3-0x85c.diff
-
-#### Building this project:
-
-```
-git clone git@github.com:0x85C/suckless.git && cd ./dmenu
-make clean all
-```
-
-#### Building project from upstream without this repo (not necessary):
-
-```
-git clone https://git.suckless.org/dmenu && cd ./dmenu
-git checkout 5.3
-mkdir ./patches # <-- copy .diff files here from ./patches directory
-git apply patches/dmenu-localpaths-5.3-0x85c.diff
-git apply patches/dmenu-center-5.3-0x85c.diff
-git apply patches/dmenu-border-5.3-0x85c.diff
-make clean all
-```
 
 #### i3 config
 
@@ -81,26 +62,6 @@ bindsym $mod+d exec --no-startup-id ~/suckless/dmenu/dmenu_run -i -c -l 10 -nb '
     - [scrollback-mouse-altscreen](https://st.suckless.org/patches/scrollback/)
       - patches/st-scrollback-mouse-altscreen-0.9.2-0x85c.diff
   
-#### Building this project:
-
-```
-git clone git@github.com:0x85C/suckless.git && cd ./st
-make clean all
-```
-
-#### Building project from upstream without this repo (not necessary):
-
-```
-git clone https://git.suckless.org/st && cd ./st
-git checkout 0.9.2
-mkdir ./patches # <-- copy .diff files here from ./patches directory
-git apply patches/st-dracula-0.9.2-0x85c.diff
-git apply patches/st-scrollback-0.9.2-0x85c.diff
-git apply patches/st-scrollback-reflow-0.9.2-0x85c.diff
-git apply patches/st-scrollback-mouse-altscreen-0.9.2-0x85c.diff
-make clean all
-```
-
 #### i3 config
 
 ```
@@ -118,23 +79,6 @@ bindsym $mod+Return exec --no-startup-id ~/suckless/st/st -f "Terminus (TTF):pix
     - all-black (my own patch)
       - patches/slock-all-black-1.5-0x85c.diff
   
-#### Building this project:
-
-```
-git clone git@github.com:0x85C/suckless.git && cd ./slock
-make clean all
-```
-
-#### Building project from upstream without this repo (not necessary):
-
-```
-git clone https://git.suckless.org/slock && cd ./slock
-git checkout 1.5
-mkdir ./patches # <-- copy .diff files here from ./patches directory
-git apply patches/slock-all-black-1.5-0x85c.diff
-make clean all
-```
-
 #### i3 config
 
 ```
