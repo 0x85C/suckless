@@ -63,8 +63,14 @@ bindsym $mod+d exec --no-startup-id ~/suckless/dmenu/dmenu_run -i -c -l 10 -nb '
 
   - tag: 0.9.2 (commit: d63b9eb90245926b531bd54b1d591adb96613e70) *- latest as of 2024-04-13*
   - patches
-    - dracula
-    - st-universcroll
+    - [dracula](https://st.suckless.org/patches/scrollback/)
+      - patches/st-dracula-0.9.2-0x85c.diff
+    - [scrollback](https://st.suckless.org/patches/scrollback/)
+      - st-scrollback-0.9.2-0x85c.diff
+    - [scrollback-reflow](https://st.suckless.org/patches/scrollback/)
+      - st-scrollback-reflow-0.9.2-0x85c.diff
+    - [scrollback-mouse-altscreen](https://st.suckless.org/patches/scrollback/)
+      - st-scrollback-mouse-altscreen-0.9.2-0x85c.diff
   
 #### Building this project:
 
