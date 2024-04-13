@@ -1,7 +1,7 @@
-diff --git a/dmenu/config.def.h b/dmenu/config.def.h
+diff --git a/config.def.h b/config.def.h
 index 88ef264..3f67f7a 100644
---- a/dmenu/config.def.h
-+++ b/dmenu/config.def.h
+--- a/config.def.h
++++ b/config.def.h
 @@ -23,3 +23,6 @@ static unsigned int lines      = 0;
   * for example: " /?\"&[]"
   */
@@ -9,10 +9,10 @@ index 88ef264..3f67f7a 100644
 +
 +/* Size of the window border */
 +static unsigned int border_width = 5;
-diff --git a/dmenu/dmenu.c b/dmenu/dmenu.c
+diff --git a/dmenu.c b/dmenu.c
 index b6cfd65..d466540 100644
---- a/dmenu/dmenu.c
-+++ b/dmenu/dmenu.c
+--- a/dmenu.c
++++ b/dmenu.c
 @@ -708,9 +708,11 @@ setup(void)
  	swa.override_redirect = True;
  	swa.background_pixel = scheme[SchemeNorm][ColBg].pixel;
