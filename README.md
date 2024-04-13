@@ -1,7 +1,18 @@
 # Suckless programs
 ## With patches and 0x85c's customizations
 
-These are [suckless](https://suckless.org/) programs with my selection of patches applied, as patches sometimes don't work with newer versions, or when multiple patches are applied, I have done the work to make these patches work with the latest vesion (at the time of writing) and resolve conflicts between patches. Either make clean all the programs, or directly apply the patches yourself from the upstream suckless repo, using the same version.
+These are [suckless](https://suckless.org/) programs with my selection of patches applied. As patches sometimes don't work with newer versions, or when multiple patches are applied, I have resolved all conflicts here so all patch files can be applied in the order they are listed here. Either `make clean all` the programs, or directly apply the patches yourself from the upstream suckless repo, using the same version of suckless programs I have used.
+
+### Build all
+
+  - dmenu
+  - st
+  - slock
+
+```
+git clone git@github.com:0x85C/suckless.git
+./build-all.sh
+```
 
 ---
 
@@ -13,6 +24,8 @@ These are [suckless](https://suckless.org/) programs with my selection of patche
       - patches/dmenu-localpaths-5.3-0x85c.diff
     - [center](https://tools.suckless.org/dmenu/patches/center/)
       - patches/dmenu-center-5.3-0x85c.diff
+    - [border](https://tools.suckless.org/dmenu/patches/border/)
+      - patches/dmenu-border-5.3-0x85c.diff
 
 #### Building this project:
 
@@ -29,6 +42,7 @@ git checkout 5.3
 mkdir ./patches # <-- copy .diff files here from ./patches directory
 git apply patches/dmenu-localpaths-5.3-0x85c.diff
 git apply patches/dmenu-center-5.3-0x85c.diff
+git apply patches/dmenu-border-5.3-0x85c.diff
 make clean all
 ```
 
@@ -49,7 +63,8 @@ bindsym $mod+d exec --no-startup-id ~/suckless/dmenu/dmenu_run -i -c -l 10 -nb '
 
   - tag: 0.9.2 (commit: d63b9eb90245926b531bd54b1d591adb96613e70) *- latest as of 2024-04-13*
   - patches
-    - none
+    - dracula
+    - st-universcroll
   
 #### Building this project:
 
@@ -63,6 +78,8 @@ make clean all
 ```
 git clone https://git.suckless.org/st && cd ./st
 git checkout 0.9.2
+mkdir ./patches # <-- copy .diff files here from ./patches directory
+git apply patches/st-dracula-0.9.2-0x85c.diff
 make clean all
 ```
 
