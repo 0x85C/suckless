@@ -51,3 +51,5 @@ git checkout 1.5
 git apply patches/slock-all-black-1.5-0x85c.diff
 make clean all
 cd ../
+
+echo "Built all programs from upstream"
