@@ -3,6 +3,8 @@
 
 These are [suckless](https://suckless.org/) programs with my selection of patches applied. As patches sometimes don't work with newer versions, or when multiple patches are applied, I have resolved all conflicts here so all patch files can be applied in the order they are listed here. Either `make clean all` the programs, or directly apply the patches yourself from the upstream suckless repo, using the same version of suckless programs I have used.
 
+List of suckless programs used:
+
   - dmenu
   - st
   - slock
