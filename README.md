@@ -3,15 +3,24 @@
 
 These are [suckless](https://suckless.org/) programs with my selection of patches applied. As patches sometimes don't work with newer versions, or when multiple patches are applied, I have resolved all conflicts here so all patch files can be applied in the order they are listed here. Either `make clean all` the programs, or directly apply the patches yourself from the upstream suckless repo, using the same version of suckless programs I have used.
 
-### Build all
-
   - dmenu
   - st
   - slock
 
+### Quickstart
+
+#### Recommended: Build all
+
 ```
 git clone git@github.com:0x85C/suckless.git
 ./build-all.sh
+```
+
+#### Alternative: Build all from upstream
+
+```
+git clone git@github.com:0x85C/suckless.git
+./build-all-upstream.sh
 ```
 
 ---
