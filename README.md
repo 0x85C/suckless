@@ -41,8 +41,8 @@ git clone git@github.com:0x85C/suckless.git
 #### i3 config
 
 ```
-# start dmenu (a program launcher) - with center patch, and dracula color scheme
-bindsym $mod+d exec --no-startup-id ~/suckless/dmenu/dmenu_run -i -c -l 10 -nb '#282a36' -nf '#f8f8f2' -sb '#6272a4' -sf '#f8f8f2'
+# start 'dmenu' program launcher - with center and border patch, and dracula color scheme
+bindsym $mod+d exec --no-startup-id "~/suckless/dmenu/dmenu_run -fn 'Terminus (TTF):pixelsize=16:antialias=true:autohint=true' -i -c -l 10 -nb '#282a36' -nf '#f8f8f2' -sb '#6272a4' -sf '#f8f8f2' -p 'Run >'"
 ```
 
 #### Screenshot
