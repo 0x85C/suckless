@@ -1,9 +1,9 @@
 # Suckless programs
 ## With patches and 0x85c's customizations
 
-These are [suckless](https://suckless.org/) programs with my selection of patches applied. As patches sometimes don't work with newer versions, or when multiple patches are applied, I have resolved all conflicts here so all patch files can be applied in the order they are listed here. Either `make clean all` the programs, or directly apply the patches yourself from the upstream suckless repo, using the same version of suckless programs I have used.
+These are [suckless](https://suckless.org/) programs with my selection of patches applied. As patches sometimes don't work with newer versions, or when multiple patches are applied, I have resolved all conflicts here so all patch files can be applied in the order they are listed here. Either `make clean all` the programs, or directly apply the patches from the upstream suckless repos, using the same version of suckless programs I have used.
 
-List of suckless programs used:
+List of suckless programs here:
 
   - dmenu
   - st
@@ -70,7 +70,13 @@ bindsym $mod+d exec --no-startup-id ~/suckless/dmenu/dmenu_run -i -c -l 10 -nb '
 bindsym $mod+Return exec --no-startup-id ~/suckless/st/st -f "Terminus (TTF):pixelsize=14:antialias=true:autohint=true"
 ```
 
-*Note: above command requires 'Terminus' font*
+*Note: above command uses 'Terminus' font*
+
+#### Screenshot
+
+![st screenshot](./st/screenshots/st-example.gif)
+
+*Demonstrating the scrollback patches with reflow (text wrap) on resize*
 
 ---
 
